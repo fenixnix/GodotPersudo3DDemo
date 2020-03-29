@@ -38,8 +38,8 @@ position = Vector2( -4.26184, 2.33125 )
 [node name="GUI" type="CanvasLayer" parent="Battle"]
 
 [node name="Button" type="Button" parent="Battle/GUI"]
-margin_right = 135.0
-margin_bottom = 43.0
+margin_right = 91.0
+margin_bottom = 20.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
