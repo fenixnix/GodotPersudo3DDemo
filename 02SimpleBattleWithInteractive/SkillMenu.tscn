@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://SkillMenu.gd" type="Script" id=1]
+
+[node name="SkillMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ItemList" type="ItemList" parent="."]
+margin_left = 707.078
+margin_top = 400.544
+margin_right = 987.078
+margin_bottom = 565.544
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="item_activated" from="ItemList" to="." method="_on_ItemList_item_activated"]

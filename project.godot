@@ -18,6 +18,10 @@ _global_script_class_icons={
 config/name="GodotPersudo3DDemo"
 config/icon="res://icon.png"
 
+[gui]
+
+theme/custom_font="res://Font/Font.tres"
+
 [rendering]
 
 environment/default_environment="res://default_env.tres"

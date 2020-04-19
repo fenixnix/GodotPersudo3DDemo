@@ -1,0 +1,54 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://02SimpleBattleWithInteractive/BattleMenu.gd" type="Script" id=1]
+
+[node name="BattleMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Menu" type="VBoxContainer" parent="."]
+margin_left = 828.244
+margin_top = 383.975
+margin_right = 980.244
+margin_bottom = 554.975
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Attack" type="Button" parent="Menu"]
+margin_right = 152.0
+margin_bottom = 31.0
+text = "攻击"
+
+[node name="Skill" type="Button" parent="Menu"]
+margin_top = 35.0
+margin_right = 152.0
+margin_bottom = 66.0
+text = "技能"
+
+[node name="Item" type="Button" parent="Menu"]
+margin_top = 70.0
+margin_right = 152.0
+margin_bottom = 101.0
+text = "物品"
+
+[node name="Defence" type="Button" parent="Menu"]
+margin_top = 105.0
+margin_right = 152.0
+margin_bottom = 136.0
+text = "防御"
+
+[node name="Flee" type="Button" parent="Menu"]
+margin_top = 140.0
+margin_right = 152.0
+margin_bottom = 171.0
+text = "逃跑"
+[connection signal="pressed" from="Menu/Attack" to="." method="_on_Attack_pressed"]
+[connection signal="pressed" from="Menu/Skill" to="." method="_on_Skill_pressed"]
+[connection signal="pressed" from="Menu/Item" to="." method="_on_Item_pressed"]
+[connection signal="pressed" from="Menu/Defence" to="." method="_on_Defence_pressed"]
+[connection signal="pressed" from="Menu/Flee" to="." method="_on_Flee_pressed"]
